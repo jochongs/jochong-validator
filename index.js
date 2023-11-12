@@ -1,3 +1,4 @@
+const NumberValidator = require("./lib/NumberValidator");
 const StringValidator = require("./lib/StringValidator");
 
 class TypeValidator {
@@ -14,6 +15,14 @@ class TypeValidator {
         }
 
         return new StringValidator(this.#data, this.#validation)
+    }
+
+    isNumber = () => {
+        if (typeof this.#data !== 'number' || isNaN(this.#data)) {
+            this.#validation = false;
+        }
+
+        return new NumberValidator(this.#data, this.#validation)
     }
 }
 
