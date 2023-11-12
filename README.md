@@ -3,6 +3,21 @@
 ```bash
 npm i jochong-validator
 ```
+
+```javascript
+const validator = require('jochong-validator')
+const data = 'hello world';
+
+validator(data).~~~.~~~.end();
+```
+At first, you have to check your data type with `isNumber`, `isString` and `isArray` method.
+
+Then, you can use method you want.
+
+Finally, you have to call end method to get the validation value of the boolean type.
+
+
+
 ### 1. Number
 ```javascript
 const validator = require('jochong-validator');
