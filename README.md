@@ -23,7 +23,7 @@ validator(data).isString().length(1, 100).end(); // true
 ```javascript
 const validator = require('jochong-validator');
 
-const data = [1,2,3];
+const data = [1, 2, 3];
 
 validator(data).isString().isAllNumber().end(); // true
 validator(data).isString().length(1, 2).end(); // false
