@@ -1,11 +1,8 @@
 {
-  "name": "data-validator",
+  "name": "jochong-validator",
   "version": "1.0.0",
-  "description": "data validator",
+  "description": "data validator for jochong",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "jochong",
   "license": "ISC"
 }
