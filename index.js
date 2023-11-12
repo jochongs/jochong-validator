@@ -1,19 +1,19 @@
 const StringValidator = require("./lib/StringValidator");
 
 class TypeValidator {
-    validation = true;
-    data;
+    #validation = true;
+    #data;
 
     constructor(data) {
-        data = data;
+        this.#data = data;
     }
 
     isString = () => {
-        if (typeof this.data !== 'string') {
-            validation = false;
+        if (typeof this.#data !== 'string') {
+            this.#validation = false;
         }
 
-        return new StringValidator(this.data, this.validation)
+        return new StringValidator(this.#data, this.#validation)
     }
 }
 
