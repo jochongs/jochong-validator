@@ -14,7 +14,10 @@ validator(data).isNumber().range(1, 13).end(); // true
 ```
 #### method
 ```typescript
+// Check data is In InArray
 isIn(inArray: array)
+
+// Check data range
 range(min: number, max: number)
 ```
 
@@ -31,10 +34,19 @@ validator(data).isString().length(1, 100).end(); // true
 
 #### method
 ```typescript
+// Check data length
 length(min: number, max: number)
+
+// Check data is satisfied with reg exp
 testRegExp(regExpString: RegExp)
+
+// Check data is In InArray
 isIn(inArray: array)
+
+// Check data is not empty
 isNotEmpty()
+
+// Check data format
 isEmail(regExpString?: RegExp)
 isPw(regExpString?: RegExp)
 isName(regExpString?: RegExp)
@@ -57,8 +69,13 @@ validator(data).isString().length(1, 2).end(); // false
 ```
 #### method
 ```typescript
+// Check data length
 length(min: number, max: number)
+
+// Check all elements of data is satisfied with reg exp
 testRegExpAll(regExpString: RegExp)
+
+// Check data format
 isAllNumber()
 isAllString()
 ```
