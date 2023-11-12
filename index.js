@@ -1,3 +1,4 @@
+const ArrayValidator = require("./lib/ArrayValidator");
 const NumberValidator = require("./lib/NumberValidator");
 const StringValidator = require("./lib/StringValidator");
 
@@ -23,6 +24,14 @@ class TypeValidator {
         }
 
         return new NumberValidator(this.#data, this.#validation)
+    }
+
+    isArray = () => {
+        if (!Array.isArray(this.#data)) {
+            this.#validation = false;
+        }
+
+        return new ArrayValidator(this.#data, this.#validation);
     }
 }
 
