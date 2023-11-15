@@ -1,8 +1,16 @@
 {
   "name": "jochong-validator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "data validator",
   "main": "index.js",
   "author": "jochong",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "validator",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jochongs/jochong-validator"
+  }
 }
