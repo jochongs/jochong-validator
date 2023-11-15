@@ -12,5 +12,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jochongs/jochong-validator"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^17.0.0"
   }
 }
