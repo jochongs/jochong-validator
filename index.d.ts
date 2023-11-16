@@ -44,7 +44,7 @@ declare module "jochong-validator" {
         constructor(data: any, validation: boolean, optional: boolean);
 
         isIn(inArray: Array<number>): NumberValidator;
-        range(min: number, max: number): NumberValidator;
+        range(min: number, max?: number): NumberValidator;
     }
 
     class ArrayValidator extends Validator {
