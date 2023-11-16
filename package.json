@@ -14,7 +14,8 @@
     "url": "https://github.com/jochongs/jochong-validator"
   },
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "test": "node ./test/index.test.js"
   },
   "devDependencies": {
     "release-it": "^17.0.0"
