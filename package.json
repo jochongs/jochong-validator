@@ -1,6 +1,6 @@
 {
   "name": "jochong-validator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Data validator",
   "main": "index.js",
   "author": "jochong",
