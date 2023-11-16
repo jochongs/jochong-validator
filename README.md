@@ -16,6 +16,12 @@ Then, you can use method you want.
 
 Finally, you have to call end method to get the validation value of the boolean type.
 
+( If you want the variable to be optional, You can use `optional` method before using Type Checking Method. )
+```javascript
+const data = req.body.contents;
+
+validator(data).optional().isString().length(1, 200).end();
+```
 
 
 ### 1. Number
@@ -71,6 +77,9 @@ isDate(regExpString?: RegExp)
 isOnlyNumber(regExpString?: RegExp)
 isOnlyAlpabet(regExpString?: RegExp)
 isId(regExpString?: RegExp)
+
+// use trim method to data
+trim()
 ```
 
 ### 3. Array
